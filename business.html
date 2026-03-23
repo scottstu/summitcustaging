@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" 
+       content="default-src 'self'; 
+                connect-src 'self' wss://*.salemove.com https://*.salemove.com wss://*.glia.com https://*.glia.com https://*.twilio.com wss://*.twilio.com;
+                script-src 'self' https://scottstu.github.io/ https://cdn.tailwindcss.com https://*.salemove.com https://*.glia.com; 
+                media-src 'self' https://*.salemove.com https://*.glia.com;
+                style-src 'self' 'unsafe-inline' https://*.salemove.com https://*.glia.com;
+                font-src 'self' data:;
+                img-src 'self' blob: data: https://*.salemove.com https://*.glia.com;">
+    <title>Business Banking | Summit CU</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script async src="https://api.glia.com/salemove_integration.js"></script>
+</head>
+<body class="bg-gray-50 font-sans text-gray-900">
+
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
+            <a href="index.html" class="text-2xl font-bold text-blue-900">SUMMIT <span class="text-green-600">CU</span></a>
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="personal.html" class="hover:text-green-600 transition">Personal</a>
+                <a href="business.html" class="text-green-600 font-semibold">Business</a>
+                <a href="loans.html" class="hover:text-green-600 transition">Loans</a>
+                <a href="rates.html" class="hover:text-green-600 transition">Rates</a>
+            </div>
+            <div>
+                <button class="bg-blue-900 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-800 transition">Online Banking</button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative bg-blue-900 py-20 text-white">
+        <div class="max-w-7xl mx-auto px-4 relative z-10">
+            <h1 class="text-5xl font-extrabold mb-4">Business Banking</h1>
+            <p class="text-xl text-blue-100">Financial solutions to help your business grow and succeed.</p>
+        </div>
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-blue-800 rounded-full opacity-50 blur-3xl"></div>
+    </section>
+
+    <section class="max-w-7xl mx-auto py-20 px-4">
+        <h2 class="text-3xl font-bold mb-12">Business Solutions Built for Your Success</h2>
+        <div class="grid md:grid-cols-2 gap-8 mb-16">
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-lg transition">
+                <div class="text-green-600 mb-4 text-3xl">🏢</div>
+                <h3 class="text-2xl font-bold mb-3">Business Checking</h3>
+                <p class="text-gray-600 mb-4">Streamlined checking designed for busy business owners.</p>
+                <ul class="space-y-2 text-gray-700">
+                    <li>✓ Unlimited transactions</li>
+                    <li>✓ Low monthly fees</li>
+                    <li>✓ ACH and wire transfers</li>
+                    <li>✓ Dedicated business support</li>
+                </ul>
+            </div>
+
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-lg transition">
+                <div class="text-green-600 mb-4 text-3xl">📊</div>
+                <h3 class="text-2xl font-bold mb-3">Business Savings</h3>
+                <p class="text-gray-600 mb-4">Build business reserves with competitive savings rates.</p>
+                <ul class="space-y-2 text-gray-700">
+                    <li>✓ Above-market rates</li>
+                    <li>✓ No transaction limits</li>
+                    <li>✓ NCUA insured protection</li>
+                    <li>✓ Flexible terms</li>
+                </ul>
+            </div>
+
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-lg transition">
+                <div class="text-green-600 mb-4 text-3xl">💼</div>
+                <h3 class="text-2xl font-bold mb-3">Lines of Credit</h3>
+                <p class="text-gray-600 mb-4">Flexible financing when you need working capital.</p>
+                <ul class="space-y-2 text-gray-700">
+                    <li>✓ Quick approvals</li>
+                    <li>✓ Competitive rates</li>
+                    <li>✓ Flexible draw period</li>
+                    <li>✓ Seasonal adjustment options</li>
+                </ul>
+            </div>
+
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-lg transition">
+                <div class="text-green-600 mb-4 text-3xl">💳</div>
+                <h3 class="text-2xl font-bold mb-3">Business Credit Cards</h3>
+                <p class="text-gray-600 mb-4">Manage business expenses with rewards and controls.</p>
+                <ul class="space-y-2 text-gray-700">
+                    <li>✓ Employee card programs</li>
+                    <li>✓ Spending controls</li>
+                    <li>✓ Business rewards</li>
+                    <li>✓ Fraud monitoring</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bg-green-50 border-2 border-green-200 rounded-xl p-8 mb-8">
+            <h3 class="text-2xl font-bold mb-3">Why Choose Summit for Business Banking?</h3>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div>
+                    <p class="font-semibold text-green-700 mb-2">Local Expertise</p>
+                    <p class="text-gray-600">Talk to local business bankers who understand your community.</p>
+                </div>
+                <div>
+                    <p class="font-semibold text-green-700 mb-2">Competitive Rates</p>
+                    <p class="text-gray-600">Save on fees and get better rates than national banks.</p>
+                </div>
+                <div>
+                    <p class="font-semibold text-green-700 mb-2">24/7 Support</p>
+                    <p class="text-gray-600">Access support when you need it, day or night.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-blue-50 border-2 border-blue-200 rounded-xl p-8 text-center">
+            <h3 class="text-2xl font-bold mb-3">Let's Grow Your Business Together</h3>
+            <p class="text-gray-600 mb-6">Connect with one of our business banking specialists today.</p>
+            <button class="bg-green-600 hover:bg-green-500 text-white px-8 py-3 rounded-full font-bold transition">Get Started</button>
+        </div>
+    </section>
+
+    <footer class="bg-gray-100 py-12 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 text-center text-gray-500 text-sm">
+            <p>&copy; 2026 Summit Credit Union Staging. Federally Insured by NCUA. Equal Housing Lender.</p>
+            <div class="mt-4 space-x-6">
+                <a href="#" class="hover:underline">Privacy Policy</a>
+                <a href="#" class="hover:underline">Disclosures</a>
+                <a href="#" class="hover:underline">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

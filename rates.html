@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" 
+       content="default-src 'self'; 
+                connect-src 'self' wss://*.salemove.com https://*.salemove.com wss://*.glia.com https://*.glia.com https://*.twilio.com wss://*.twilio.com;
+                script-src 'self' https://scottstu.github.io/ https://cdn.tailwindcss.com https://*.salemove.com https://*.glia.com; 
+                media-src 'self' https://*.salemove.com https://*.glia.com;
+                style-src 'self' 'unsafe-inline' https://*.salemove.com https://*.glia.com;
+                font-src 'self' data:;
+                img-src 'self' blob: data: https://*.salemove.com https://*.glia.com;">
+    <title>Rates | Summit CU</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script async src="https://api.glia.com/salemove_integration.js"></script>
+</head>
+<body class="bg-gray-50 font-sans text-gray-900">
+
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
+            <a href="index.html" class="text-2xl font-bold text-blue-900">SUMMIT <span class="text-green-600">CU</span></a>
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="personal.html" class="hover:text-green-600 transition">Personal</a>
+                <a href="business.html" class="hover:text-green-600 transition">Business</a>
+                <a href="loans.html" class="hover:text-green-600 transition">Loans</a>
+                <a href="rates.html" class="text-green-600 font-semibold">Rates</a>
+            </div>
+            <div>
+                <button class="bg-blue-900 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-800 transition">Online Banking</button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative bg-blue-900 py-20 text-white">
+        <div class="max-w-7xl mx-auto px-4 relative z-10">
+            <h1 class="text-5xl font-extrabold mb-4">Current Rates</h1>
+            <p class="text-xl text-blue-100">Competitive rates updated regularly to serve you better.</p>
+        </div>
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-blue-800 rounded-full opacity-50 blur-3xl"></div>
+    </section>
+
+    <section class="max-w-7xl mx-auto py-20 px-4">
+        <h2 class="text-3xl font-bold mb-12">Savings Rates</h2>
+        <div class="bg-white rounded-xl shadow-sm border border-gray-100 mb-12 overflow-hidden">
+            <table class="w-full">
+                <thead class="bg-blue-50">
+                    <tr>
+                        <th class="px-6 py-4 text-left font-semibold text-gray-700">Product</th>
+                        <th class="px-6 py-4 text-left font-semibold text-gray-700">APY</th>
+                        <th class="px-6 py-4 text-left font-semibold text-gray-700">Minimum Balance</th>
+                        <th class="px-6 py-4 text-left font-semibold text-gray-700">Description</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y">
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-6 py-4 font-semibold">Savings Account</td>
+                        <td class="px-6 py-4 text-green-600 font-bold">4.35%</td>
+                        <td class="px-6 py-4">$0</td>
+                        <td class="px-6 py-4 text-sm text-gray-600">No minimum balance required</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-6 py-4 font-semibold">Money Market</td>
+                        <td class="px-6 py-4 text-green-600 font-bold">4.65%</td>
+                        <td class="px-6 py-4">$2,500</td>
+                        <td class="px-6 py-4 text-sm text-gray-600">Higher balance = higher rate tier</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-6 py-4 font-semibold">12-Month CD</td>
+                        <td class="px-6 py-4 text-green-600 font-bold">4.85%</td>
+                        <td class="px-6 py-4">$500</td>
+                        <td class="px-6 py-4 text-sm text-gray-600">Fixed rate, penalty-free withdrawal</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-6 py-4 font-semibold">24-Month CD</td>
+                        <td class="px-6 py-4 text-green-600 font-bold">5.05%</td>
+                        <td class="px-6 py-4">$500</td>
+                        <td class="px-6 py-4 text-sm text-gray-600">Two-year commitment</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-6 py-4 font-semibold">60-Month CD</td>
+                        <td class="px-6 py-4 text-green-600 font-bold">5.25%</td>
+                        <td class="px-6 py-4">$500</td>
+                        <td class="px-6 py-4 text-sm text-gray-600">Long-term growth opportunity</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2 class="text-3xl font-bold mb-12">Loan Rates</h2>
+        <div class="grid md:grid-cols-2 gap-8 mb-16">
+            <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+                <table class="w-full">
+                    <thead class="bg-blue-50">
+                        <tr>
+                            <th class="px-6 py-4 text-left font-semibold text-gray-700">Loan Type</th>
+                            <th class="px-6 py-4 text-left font-semibold text-gray-700">APR</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y">
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 font-semibold">Auto Loan (New)</td>
+                            <td class="px-6 py-4 text-green-600 font-bold">5.99%</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 font-semibold">Auto Loan (Used)</td>
+                            <td class="px-6 py-4 text-green-600 font-bold">6.49%</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 font-semibold">Personal Loan</td>
+                            <td class="px-6 py-4 text-green-600 font-bold">7.49%</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 font-semibold">Home Equity</td>
+                            <td class="px-6 py-4 text-green-600 font-bold">7.99%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+                <table class="w-full">
+                    <thead class="bg-blue-50">
+                        <tr>
+                            <th class="px-6 py-4 text-left font-semibold text-gray-700">Mortgage Type</th>
+                            <th class="px-6 py-4 text-left font-semibold text-gray-700">Rate</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y">
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 font-semibold">15-Year Fixed</td>
+                            <td class="px-6 py-4 text-green-600 font-bold">6.45%</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 font-semibold">30-Year Fixed</td>
+                            <td class="px-6 py-4 text-green-600 font-bold">6.99%</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 font-semibold">5/1 ARM</td>
+                            <td class="px-6 py-4 text-green-600 font-bold">5.99%</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 font-semibold">7/1 ARM</td>
+                            <td class="px-6 py-4 text-green-600 font-bold">6.25%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="bg-yellow-50 border-2 border-yellow-200 rounded-xl p-8 mb-8">
+            <h3 class="text-lg font-semibold mb-2">⚠️ Rates Disclaimer</h3>
+            <p class="text-sm text-gray-700">Rates displayed are as of today and are subject to change at any time. Actual rates may vary based on creditworthiness, loan type, term, and other factors. This is not an offer to enter into an agreement. Rates subject to change without notice. Contact a loan officer for current rates and terms.</p>
+        </div>
+
+        <div class="bg-blue-50 border-2 border-blue-200 rounded-xl p-8 text-center">
+            <h3 class="text-2xl font-bold mb-3">Have Questions About Our Rates?</h3>
+            <p class="text-gray-600 mb-6">Our lending specialists are here to help you find the best rate for your situation.</p>
+            <button class="bg-green-600 hover:bg-green-500 text-white px-8 py-3 rounded-full font-bold transition">Contact a Loan Officer</button>
+        </div>
+    </section>
+
+    <footer class="bg-gray-100 py-12 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 text-center text-gray-500 text-sm">
+            <p>&copy; 2026 Summit Credit Union Staging. Federally Insured by NCUA. Equal Housing Lender.</p>
+            <div class="mt-4 space-x-6">
+                <a href="#" class="hover:underline">Privacy Policy</a>
+                <a href="#" class="hover:underline">Disclosures</a>
+                <a href="#" class="hover:underline">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" 
+       content="default-src 'self'; 
+                connect-src 'self' wss://*.salemove.com https://*.salemove.com wss://*.glia.com https://*.glia.com https://*.twilio.com wss://*.twilio.com;
+                script-src 'self' https://scottstu.github.io/ https://cdn.tailwindcss.com https://*.salemove.com https://*.glia.com; 
+                media-src 'self' https://*.salemove.com https://*.glia.com;
+                style-src 'self' 'unsafe-inline' https://*.salemove.com https://*.glia.com;
+                font-src 'self' data:;
+                img-src 'self' blob: data: https://*.salemove.com https://*.glia.com;">
+    <title>Loans | Summit CU</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script async src="https://api.glia.com/salemove_integration.js"></script>
+</head>
+<body class="bg-gray-50 font-sans text-gray-900">
+
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
+            <a href="index.html" class="text-2xl font-bold text-blue-900">SUMMIT <span class="text-green-600">CU</span></a>
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="personal.html" class="hover:text-green-600 transition">Personal</a>
+                <a href="business.html" class="hover:text-green-600 transition">Business</a>
+                <a href="loans.html" class="text-green-600 font-semibold">Loans</a>
+                <a href="rates.html" class="hover:text-green-600 transition">Rates</a>
+            </div>
+            <div>
+                <button class="bg-blue-900 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-800 transition">Online Banking</button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative bg-blue-900 py-20 text-white">
+        <div class="max-w-7xl mx-auto px-4 relative z-10">
+            <h1 class="text-5xl font-extrabold mb-4">Loans</h1>
+            <p class="text-xl text-blue-100">Competitive rates and flexible terms for all your lending needs.</p>
+        </div>
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-blue-800 rounded-full opacity-50 blur-3xl"></div>
+    </section>
+
+    <section class="max-w-7xl mx-auto py-20 px-4">
+        <h2 class="text-3xl font-bold mb-12">Our Loan Products</h2>
+        <div class="grid md:grid-cols-2 gap-8 mb-16">
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-lg transition">
+                <div class="text-green-600 mb-4 text-3xl">🏠</div>
+                <h3 class="text-2xl font-bold mb-3">Mortgage Loans</h3>
+                <p class="text-gray-600 mb-4">Achieve homeownership with competitive rates and personalized service.</p>
+                <ul class="space-y-2 text-gray-700">
+                    <li>✓ Fixed and adjustable rates</li>
+                    <li>✓ 15-year and 30-year terms</li>
+                    <li>✓ Low down payment options</li>
+                    <li>✓ Fast approval process</li>
+                </ul>
+            </div>
+
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-lg transition">
+                <div class="text-green-600 mb-4 text-3xl">🚗</div>
+                <h3 class="text-2xl font-bold mb-3">Auto Loans</h3>
+                <p class="text-gray-600 mb-4">Get behind the wheel with quick approvals and flexible terms.</p>
+                <ul class="space-y-2 text-gray-700">
+                    <li>✓ New and used vehicles</li>
+                    <li>✓ Quick online approval</li>
+                    <li>✓ Flexible payment options</li>
+                    <li>✓ Low APR rates</li>
+                </ul>
+            </div>
+
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-lg transition">
+                <div class="text-green-600 mb-4 text-3xl">🎓</div>
+                <h3 class="text-2xl font-bold mb-3">Education Loans</h3>
+                <p class="text-gray-600 mb-4">Invest in your future with affordable education financing.</p>
+                <ul class="space-y-2 text-gray-700">
+                    <li>✓ Parent and student loans</li>
+                    <li>✓ In-school deferment</li>
+                    <li>✓ Flexible repayment terms</li>
+                    <li>✓ Competitive rates</li>
+                </ul>
+            </div>
+
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-lg transition">
+                <div class="text-green-600 mb-4 text-3xl">💰</div>
+                <h3 class="text-2xl font-bold mb-3">Personal Loans</h3>
+                <p class="text-gray-600 mb-4">Get the funds you need for life's opportunities and expenses.</p>
+                <ul class="space-y-2 text-gray-700">
+                    <li>✓ Unsecured loans</li>
+                    <li>✓ Quick funding</li>
+                    <li>✓ Flexible amounts</li>
+                    <li>✓ Fixed interest rates</li>
+                </ul>
+            </div>
+
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-lg transition">
+                <div class="text-green-600 mb-4 text-3xl">🏖️</div>
+                <h3 class="text-2xl font-bold mb-3">Vacation Loans</h3>
+                <p class="text-gray-600 mb-4">Make your dream vacation a reality with special seasonal financing.</p>
+                <ul class="space-y-2 text-gray-700">
+                    <li>✓ Seasonal promotional rates</li>
+                    <li>✓ Quick approval</li>
+                    <li>✓ Travel-specific terms</li>
+                    <li>✓ Limited time offers</li>
+                </ul>
+            </div>
+
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-lg transition">
+                <div class="text-green-600 mb-4 text-3xl">🏥</div>
+                <h3 class="text-2xl font-bold mb-3">Home Equity Loans</h3>
+                <p class="text-gray-600 mb-4">Tap into your home's equity for major life expenses.</p>
+                <ul class="space-y-2 text-gray-700">
+                    <li>✓ Competitive rates</li>
+                    <li>✓ Flexible draw periods</li>
+                    <li>✓ Interest-only options</li>
+                    <li>✓ Easy application process</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bg-blue-50 border-2 border-blue-200 rounded-xl p-8 text-center">
+            <h3 class="text-2xl font-bold mb-3">Find Your Loan Today</h3>
+            <p class="text-gray-600 mb-6">Compare rates and apply online in minutes. No hidden fees, just honest lending.</p>
+            <button class="bg-green-600 hover:bg-green-500 text-white px-8 py-3 rounded-full font-bold transition">Apply Now</button>
+        </div>
+    </section>
+
+    <footer class="bg-gray-100 py-12 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 text-center text-gray-500 text-sm">
+            <p>&copy; 2026 Summit Credit Union Staging. Federally Insured by NCUA. Equal Housing Lender.</p>
+            <div class="mt-4 space-x-6">
+                <a href="#" class="hover:underline">Privacy Policy</a>
+                <a href="#" class="hover:underline">Disclosures</a>
+                <a href="#" class="hover:underline">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

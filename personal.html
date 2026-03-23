@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" 
+       content="default-src 'self'; 
+                connect-src 'self' wss://*.salemove.com https://*.salemove.com wss://*.glia.com https://*.glia.com https://*.twilio.com wss://*.twilio.com;
+                script-src 'self' https://scottstu.github.io/ https://cdn.tailwindcss.com https://*.salemove.com https://*.glia.com; 
+                media-src 'self' https://*.salemove.com https://*.glia.com;
+                style-src 'self' 'unsafe-inline' https://*.salemove.com https://*.glia.com;
+                font-src 'self' data:;
+                img-src 'self' blob: data: https://*.salemove.com https://*.glia.com;">
+    <title>Personal Banking | Summit CU</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script async src="https://api.glia.com/salemove_integration.js"></script>
+</head>
+<body class="bg-gray-50 font-sans text-gray-900">
+
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
+            <a href="index.html" class="text-2xl font-bold text-blue-900">SUMMIT <span class="text-green-600">CU</span></a>
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="personal.html" class="text-green-600 font-semibold">Personal</a>
+                <a href="business.html" class="hover:text-green-600 transition">Business</a>
+                <a href="loans.html" class="hover:text-green-600 transition">Loans</a>
+                <a href="rates.html" class="hover:text-green-600 transition">Rates</a>
+            </div>
+            <div>
+                <button class="bg-blue-900 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-800 transition">Online Banking</button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative bg-blue-900 py-20 text-white">
+        <div class="max-w-7xl mx-auto px-4 relative z-10">
+            <h1 class="text-5xl font-extrabold mb-4">Personal Banking</h1>
+            <p class="text-xl text-blue-100">Banking solutions designed for you and your family.</p>
+        </div>
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-blue-800 rounded-full opacity-50 blur-3xl"></div>
+    </section>
+
+    <section class="max-w-7xl mx-auto py-20 px-4">
+        <h2 class="text-3xl font-bold mb-12">Our Personal Banking Products</h2>
+        <div class="grid md:grid-cols-2 gap-8 mb-16">
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-lg transition">
+                <div class="text-green-600 mb-4 text-3xl">💰</div>
+                <h3 class="text-2xl font-bold mb-3">Checking Accounts</h3>
+                <p class="text-gray-600 mb-4">Easy access to your money with no monthly fees and nationwide ATM access.</p>
+                <ul class="space-y-2 text-gray-700">
+                    <li>✓ No minimum balance required</li>
+                    <li>✓ Free debit card</li>
+                    <li>✓ Mobile banking included</li>
+                    <li>✓ Earn rewards on purchases</li>
+                </ul>
+            </div>
+
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-lg transition">
+                <div class="text-green-600 mb-4 text-3xl">🏦</div>
+                <h3 class="text-2xl font-bold mb-3">Savings Accounts</h3>
+                <p class="text-gray-600 mb-4">Grow your savings with competitive rates and flexible options.</p>
+                <ul class="space-y-2 text-gray-700">
+                    <li>✓ High-yield savings rates</li>
+                    <li>✓ Easy transfers to checking</li>
+                    <li>✓ NCUA insured up to $250K</li>
+                    <li>✓ No withdrawal limits</li>
+                </ul>
+            </div>
+
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-lg transition">
+                <div class="text-green-600 mb-4 text-3xl">💳</div>
+                <h3 class="text-2xl font-bold mb-3">Credit Cards</h3>
+                <p class="text-gray-600 mb-4">Competitive rates, rewards, and benefits that work for you.</p>
+                <ul class="space-y-2 text-gray-700">
+                    <li>✓ Cash back on all purchases</li>
+                    <li>✓ Low APR options</li>
+                    <li>✓ Travel protections included</li>
+                    <li>✓ Zero fraud liability</li>
+                </ul>
+            </div>
+
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-lg transition">
+                <div class="text-green-600 mb-4 text-3xl">👨‍👩‍👧‍👦</div>
+                <h3 class="text-2xl font-bold mb-3">Money Market Accounts</h3>
+                <p class="text-gray-600 mb-4">Balance your growth and liquidity needs with tiered interest rates.</p>
+                <ul class="space-y-2 text-gray-700">
+                    <li>✓ Variable interest rates</li>
+                    <li>✓ Check-writing privileges</li>
+                    <li>✓ Minimum balance requirements</li>
+                    <li>✓ Limited transactions per month</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bg-blue-50 border-2 border-blue-200 rounded-xl p-8 text-center">
+            <h3 class="text-2xl font-bold mb-3">Ready to Get Started?</h3>
+            <p class="text-gray-600 mb-6">Join thousands of members enjoying personal banking that puts you first.</p>
+            <button class="bg-green-600 hover:bg-green-500 text-white px-8 py-3 rounded-full font-bold transition">Open an Account Today</button>
+        </div>
+    </section>
+
+    <footer class="bg-gray-100 py-12 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 text-center text-gray-500 text-sm">
+            <p>&copy; 2026 Summit Credit Union Staging. Federally Insured by NCUA. Equal Housing Lender.</p>
+            <div class="mt-4 space-x-6">
+                <a href="#" class="hover:underline">Privacy Policy</a>
+                <a href="#" class="hover:underline">Disclosures</a>
+                <a href="#" class="hover:underline">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
